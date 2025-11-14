@@ -1,4 +1,4 @@
-# DSKD
+# Direction Sensitivity–based Knowledge Distillation: Optimization-Aware Low‑Rank Knowledge Transfer
 
 ### **Introduction**
 
