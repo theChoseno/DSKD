@@ -1,0 +1,22 @@
+EXPERIMENT:
+  NAME: ""
+  TAG: "cam,res56,res20"
+  PROJECT: "cifar100_baselines"
+DISTILLER:
+  TYPE: "CAM"
+  TEACHER: "resnet56"
+  STUDENT: "resnet20"
+SOLVER:
+  BATCH_SIZE: 64
+  EPOCHS: 240
+  LR: 0.05
+  LR_DECAY_STAGES: [150, 180, 210]
+  LR_DECAY_RATE: 0.1
+  WEIGHT_DECAY: 0.0005
+  MOMENTUM: 0.9
+  TYPE: "SGD"
+CAM:
+  LOSS:
+    CE_WEIGHT: 1.0
+    FEAT_WEIGHT: 0.5
+#     FEAT_WEIGHT: 10.0 #用于kl方案
