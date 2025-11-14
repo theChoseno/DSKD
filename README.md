@@ -8,7 +8,7 @@ We propose a Direction Sensitivity-based Knowledge Distillation framework, namel
 
 An overview of our DSKD. We apply SVD on the parameter update part of the student model and use the direction sensitivity metric to select the k most sensitive singular directions. Using normalized sensitivity weights, we reconstruct low-rank approximations of both teacher and student models along these directions. The alignment in the sensitive subspace is then measured via MSE loss between the reconstructed matrices. Our approach preserves the most influential update directions and enables fine-grained, direction-aware knowledge transfer.
 
-![overview](.\resources\overview.jpg)
+![overview](/resources/overview.jpg)
 
 ### Installation
 
